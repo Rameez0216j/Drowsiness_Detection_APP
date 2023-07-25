@@ -1,0 +1,27 @@
+// running on local PC
+docker run -d -p 5000:5001 code2buzz/myapp
+
+54.161.187.109   --> public Ip address
+ec2-54-161-187-109.compute-1.amazonaws.com    ---> public IP DNS
+
+
+44.202.3.137
+ec2-44-202-3-137.compute-1.amazonaws.com
+
+
+sudo yum update -y
+sudo yum install -y docker
+sudo service docker start
+// to avoid sudo command everytime with docker command (after doing this exit and login again)
+sudo usermod -a -G docker ec2-user
+exit
+
+//after login
+docker info --> to check the docker proper installations
+
+// Running image
+docker run -d -p 80:5001 code2buzz/myapp python app.py --> mapping ec2 port 80 with container port 5001
+
+// deployment on nginx
+docker run -d -p 80:80 --name nginx nginx  ---> will not work as port is already allocated 
+docker ps
