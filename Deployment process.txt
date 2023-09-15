@@ -2,8 +2,9 @@
 docker run -d -p 5000:5001 code2buzz/myapp
 
 54.161.187.109   --> public Ip address
-ec2-54-161-187-109.compute-1.amazonaws.com    ---> public IP DNS
+http://ec2-54-161-187-109.compute-1.amazonaws.com    ---> public IP DNS
 
+use http:// not https://
 
 44.202.3.137
 ec2-44-202-3-137.compute-1.amazonaws.com
